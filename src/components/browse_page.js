@@ -37,9 +37,7 @@ const BrowsePage = () => {
     setFilteredProducts(filtered);
   }
 
-  const handleClearFilters = () => {
-    setFilteredProducts([]);
-  }
+  const handleClearFilters = () => setFilteredProducts([]);
 
   return (
     <div className="BrowsePage">
