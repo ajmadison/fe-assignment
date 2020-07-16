@@ -36,7 +36,7 @@ export const ProductCard = ({
         <>
           <p className={`ProductCard-description ${!is_quick_ship ? 'ProductCard--hasFourLines' : ''}`}>{description}</p>
           {is_quick_ship && (
-            <img className="ProductCard-quickShipLogo" src={quirksShipImage}></img>
+            <img alt="quick ship" className="ProductCard-quickShipLogo" src={quirksShipImage}></img>
           )}
         </>
         <>
@@ -47,7 +47,7 @@ export const ProductCard = ({
           </div>
         </>
         <button className="ProductCard-viewPackage">
-          <a target="_blank" href={`https://ajmadison.com${url}`}>View Package</a>
+          <a target="_blank" rel="noopener noreferrer" href={`https://ajmadison.com${url}`}>View Package</a>
         </button>
       </div>
     </div>

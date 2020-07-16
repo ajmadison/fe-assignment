@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../stylesheets/product_filters.scss';
 import {Checkbox} from './checkbox';
 
