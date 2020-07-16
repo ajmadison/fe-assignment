@@ -1,8 +1,6 @@
 @import './mixins.scss';
 
 .BrowsePage {
-  width: 100%;
-  margin: 0 auto;
   background-color: #F5F5F5;
   box-sizing: border-box;
   &-mainContent {
@@ -19,7 +17,6 @@
     font-size: 14px;
   }
   &-headerSection {
-    background-color: white;
     padding: 30px 4%;
   }
   &-showMoreWrapper {
@@ -32,11 +29,14 @@
   }
   &-showMore {
     @include greyButtonWithGreenText;
-    width: 290px;
-    height: 68px;
-    background-color: white;
+    width: 341px;
+    height: 55px;
     border-radius: 3px;
-    font-size: 22px;
+    font-size: 18px;
+  }
+  &-headerSection,
+  &-showMore {
+    background-color: white;
   }
   @media screen and (min-width: 760px) {
     &-headerSection {
