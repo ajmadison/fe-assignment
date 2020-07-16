@@ -8,6 +8,18 @@ import '../stylesheets/browse_page.scss';
 const BrowsePage = () => {
 
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [products, setProducts] = useState(null)
+
+  useEffect(() => {
+    fetch('https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR').then(response => {
+      if (response.data) {
+        setProducts(response.data);
+      } else {
+        // use hard coded data if server doesn't send data back
+        setProducts(data);
+      }
+    })
+  }, [])
 
   const handleChangeApplicancesDropdown = e => {
     const appliance = e.target.value;
@@ -42,10 +54,11 @@ const BrowsePage = () => {
             /> 
           </div>
         </header>
-
-        <div className="BrowsePage-productGridWrapper">
-          <ProductGrid products={filteredProducts.length > 0 ? filteredProducts : data} />
-        </div>
+        {products && (
+          <div className="BrowsePage-productGridWrapper">
+            <ProductGrid products={filteredProducts.length > 0 ? filteredProducts : data} />
+          </div>
+        )}
       </div>
       <div className="BrowsePage-showMoreWrapper">
         <button className="BrowsePage-showMore">Show More</button>
