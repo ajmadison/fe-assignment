@@ -1,0 +1,21 @@
+.Checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+  &-isChecked {
+    background-color: tomato;
+  }
+  &-checkMarkIcon {
+    position: absolute;
+    color: white;
+  }
+}

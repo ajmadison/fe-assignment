@@ -1,0 +1,113 @@
+@import './mixins.scss';
+
+.ProductFilters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #FBFBFB;
+  box-sizing: border-box;
+  font-family: HelveticaNeue;
+  padding: 18px 4%;
+  &-filterWrappers {
+    display: none;
+  }
+  &-selectAppliances {
+    justify-content: center;
+    align-items: center;
+  }
+  &-sortBy {
+    justify-content: center;
+    align-items: center;
+  }
+  &-selectAppliances,
+  &-sortBy,
+  &-quickShip {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &-appliancesDropdown,
+  &-sortByDropdown {
+    width: 130px;
+    height: 32px;
+    color: #666666;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-appliances,
+  &-sortTitle {
+    margin-right: 12px;
+  }
+  &-sortTitle {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  &-clearAllButton {
+    width: 150px;
+    @include greyButtonWithGreenText;
+    font-size: 14px;
+    display: none;
+  }
+  &-sortAndFilter {
+    color: #23408A;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 740px) {
+    justify-content: space-between;
+    &-filterWrappers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      max-width: 641px;
+      padding-right: 12px;
+    }
+    &-sortAndFilter {
+      display: none;
+    }
+    &-clearAllButton {
+      width: 150px;
+      @include greyButtonWithGreenText;
+      font-size: 14px;
+      display: block;
+    }
+  }
+  @media screen and (min-width: 760px) {
+    padding: 0 2%;
+    &-filterWrappers {
+      width: 64%;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    height: 80px;
+    padding: 0 2%;
+    &-filterWrappers {
+      width: 74%;
+      max-width: 700px;
+    }
+    &-selectAppliances,
+    &-sortBy,
+    &-quickShip {
+      flex-direction: row;
+      align-items: center;
+    }
+    &-sortTitle {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    &-appliancesDropdown,
+    &-sortByDropdown {
+      width: 160px;
+    }
+    &-filterWrappers {
+      width: 85%;
+    }
+  }
+}
+
