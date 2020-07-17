@@ -14,6 +14,8 @@ const BrowsePage = () => {
     fetch('https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR').then(response => {
       if (response && response.data && Array.isArray(response.data) && response.data.length > 0) {
         setProducts(response.data);
+      } else {
+        setProducts(data);
       }
     }).catch(() => {
         // use hard coded data if server doesn't send data back
@@ -54,7 +56,7 @@ const BrowsePage = () => {
         </header>
         {products && (
           <div className="BrowsePage-productGridWrapper">
-            <ProductGrid products={filteredProducts.length > 0 ? filteredProducts : data} />
+            <ProductGrid products={filteredProducts.length > 0 ? filteredProducts : products} />
           </div>
         )}
       </div>
