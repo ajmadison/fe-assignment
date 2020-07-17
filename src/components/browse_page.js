@@ -14,10 +14,10 @@ const BrowsePage = () => {
     fetch('https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR').then(response => {
       if (response && response.data && Array.isArray(response.data) && response.data.length > 0) {
         setProducts(response.data);
-      } else {
+      }
+    }).catch(() => {
         // use hard coded data if server doesn't send data back
         setProducts(data);
-      }
     })
   }, [])
 
