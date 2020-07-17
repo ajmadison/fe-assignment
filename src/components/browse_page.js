@@ -25,8 +25,8 @@ const BrowsePage = () => {
 
   const handleChangeApplicancesDropdown = e => {
     const appliance = e.target.value;
-    const produts = filteredProducts.length > 0 ? filteredProducts : data;
-    const filtered = produts.filter(product => {
+    const localProdcuts = filteredProducts.length > 0 ? filteredProducts : products;
+    const filtered = localProdcuts.filter(product => {
       for (let i = 0; i < product.items.length; i++) {
         if (product.items[i]['~product_type'] === appliance) {
           return true
