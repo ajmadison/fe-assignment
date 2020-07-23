@@ -1,0 +1,148 @@
+@import './_variables';
+
+.App__container {
+  padding: 40px 15px;
+  //desktop
+  @media screen and (min-width: $breakpoint) {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App__card-container {
+    //desktop
+    @media screen and (min-width: $breakpoint) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 32px 35px 25px;
+    }
+
+    .App__card.fade-in {
+      flex-grow: 1;
+    }
+  }
+
+  .App__sort-filter-menu {
+    width: 100%;
+    margin: 0 0 32px 0;
+
+    .App__sort-filter-menu--mobile {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      //desktop
+      @media screen and (min-width: $breakpoint) {
+        display: none;
+      }
+    }
+
+    .App__sort-filter-menu--desktop {
+      display: none;
+      //desktop
+      @media screen and (min-width: $breakpoint) {
+        display: flex;
+        width: 100%;
+        height: 85px;
+        background: #fbfbfb;
+        border: 1px solid #f0eded;
+        padding: 0 26px 0 35px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      form {
+        display: flex;
+        align-items: center;
+
+        .App__checkbox {
+          min-width: 144px;
+          label {
+            margin: 0 10px 0 0;
+          }
+          input {
+            position: relative;
+            top: 1px;
+            margin: 0 10px 0 0;
+          }
+          span {
+            font-size: 15px;
+            color: #666666;
+            min-width: 72px;
+            white-space: nowrap;
+          }
+        }
+        .App__select {
+          display: flex;
+          align-items: center;
+          margin: 0 36px 0 0;
+        }
+      }
+
+      label {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #222222;
+        min-width: fit-content;
+        margin: 0 14px 0 0;
+      }
+    }
+
+    button.App__btn-sort-filter {
+      display: block;
+      width: 100%;
+      background: #fbfbfb;
+      border: 1px solid #f0eded;
+      height: 45px;
+      margin: 0 0 10px 0;
+    }
+
+    .App__pagination {
+      font-size: 12px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTransform {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+.fade-in-transform {
+  animation: fadeInTransform 0.4s ease-out;
+}
+
+select {
+  font-size: 15px;
+  line-height: 18px;
+  color: #666666;
+  width: 250px;
+  height: 45px;
+  padding: 0 20px;
+  border: 1px solid #cccccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../src/images/down-arrow.svg');
+  background-position: calc(100% - 15px) calc(1em);
+  background-size: 15px 15px, 15px 15px;
+  background-repeat: no-repeat;
+}
