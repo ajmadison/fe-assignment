@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.633377b4.chunk.css",
+    "main.js": "/static/js/main.e1bc2d5f.chunk.js",
+    "main.js.map": "/static/js/main.e1bc2d5f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.897a32b4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.897a32b4.js.map",
+    "static/js/2.3fc34f41.chunk.js": "/static/js/2.3fc34f41.chunk.js",
+    "static/js/2.3fc34f41.chunk.js.map": "/static/js/2.3fc34f41.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.497fc523396a7925f2a0032230b04fc5.js": "/precache-manifest.497fc523396a7925f2a0032230b04fc5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.633377b4.chunk.css.map": "/static/css/main.633377b4.chunk.css.map",
+    "static/js/2.3fc34f41.chunk.js.LICENSE.txt": "/static/js/2.3fc34f41.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/product_image_development.jpg": "/static/media/product_image_development.7dfff60a.jpg",
+    "static/media/quickship-pdp.png": "/static/media/quickship-pdp.4307f342.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.897a32b4.js",
+    "static/js/2.3fc34f41.chunk.js",
+    "static/css/main.633377b4.chunk.css",
+    "static/js/main.e1bc2d5f.chunk.js"
+  ]
+}
