@@ -1,0 +1,69 @@
+.container {
+    width: 305px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.brand {
+    font-weight: bold;;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 15px;
+    max-height: 45px; 
+    overflow: hidden;
+}
+
+.discount {
+    color: #3B8448;
+    margin-right: 5px;
+}
+
+.final-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.image {
+    height: 204px;
+    width: 100%;
+}
+
+.list-price-container {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.list-price {
+    color: #666666;
+    text-decoration: line-through;
+}
+
+.quick-ship {
+    width: 79px;
+    height: 19px;
+    margin-top: 8px;
+}
+
+.view-package {
+    height: 41px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    border: 1px solid #9B9B9B;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-package-link {
+    text-decoration: none;
+    color: #3B8448;
+}
