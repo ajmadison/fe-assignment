@@ -1,0 +1,38 @@
+.container {
+    background: #FBFBFB;
+    border: 1px solid #F0EDED;
+    width: 100%;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.selection-container {
+    margin-right: 20px;
+}
+
+.selection-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.controls {
+    padding-left: 20px;
+}
+
+.clear-all {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    height: 45px;
+    width: 155px;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    color: #3B8448;
+    font-weight: bold;
+    border: 1px solid #9B9B9B;
+    cursor: pointer;
+    margin-right: 20px;
+}
