@@ -1,0 +1,35 @@
+.Card {
+  flex: 1 0 23%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.Card p {
+  font-size: 11px;
+}
+.Card .Shipping {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.Card .Savings {
+  margin: 5px 0;
+  font-size: 11px;
+}
+.btn-container {
+  display: flex;
+}
+button {
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid var(--gray);
+  border-radius: 0px;
+  min-height: 5ch;
+  font-weight: bold;
+  text-transform: uppercase;
+}

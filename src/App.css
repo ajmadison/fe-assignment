@@ -1,0 +1,63 @@
+:root {
+  --side-padding: 20px;
+  --yellow: #f89321;
+  --green: #50b848;
+  --green-dark: #3b8448;
+  --blue: #465ba9;
+  --gray: gray;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.green-dark {
+  color: var(--green-dark);
+}
+.gray {
+  color: var(--gray);
+}
+.strike-thru {
+  text-decoration: line-through;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 50px 100px 50px 1fr;
+  grid-template-areas:
+    "title"
+    "description"
+    "filters"
+    "appliances";
+}
+
+h2 {
+  grid-area: "title";
+  padding: 0 var(--side-padding);
+}
+
+.PageDescription {
+  grid-area: "description";
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+.Filters {
+  background-color: lightgray;
+  grid-area: "filters";
+  display: flex;
+  align-items: center;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+.Appliances {
+  grid-area: "appliances";
+  display: flex;
+  flex-wrap: wrap;
+}
