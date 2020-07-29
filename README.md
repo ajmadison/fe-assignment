@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Notes
+Majority of the work was done in `App.js` and `ItemCard.js`.  They each have their own respective `.css` file.
 
 ## Available Scripts
 
