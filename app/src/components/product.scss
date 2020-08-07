@@ -1,0 +1,98 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    max-width: 305px;
+    padding-right: 33px;
+    margin-right: 46px;
+    @media (max-width: 375px)  {
+        width: 100%;
+        max-width: inherit;
+        margin-right: 15px;
+        flex-direction: row;
+    }
+    &_image{
+        max-height: 300px;
+        margin-bottom: 15px;
+        @media (max-width: 375px)  {
+            width: 50%;
+            max-width: 157px;
+            max-height: 140px;
+        }
+    }
+    &_quickshop{
+        margin-bottom: 15px;
+    }
+    &-content {
+        &_desktop{
+            display: block;
+            width: 100%;
+            max-width: 305px;
+            @media (max-width: 375px)  {
+                display: none;
+            }
+            button{
+                width: 100%;
+                max-width: 303px;
+                height: 41px;
+                margin-bottom: 30px;
+                background: #F5F5F5;
+                border: 1px solid #9B9B9B;
+                box-sizing: border-box;
+                color: #3B8448;
+                &:hover{
+                    background-color: #3B8448;
+                    color: #fff;
+                }
+                @media (max-width: 375px)  {
+                    display: none;
+                }
+            }
+        }
+        &_mobile{
+            display: none;
+            @media (max-width: 375px)  {
+                display: block;
+                width: 50%;;
+                flex-direction: row;
+                padding-left: 20px;
+                max-width: 202px;
+                margin-bottom: 25px;
+            }
+        }
+        &_description{
+            font-family: 'Roboto';
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 8px;
+            min-height: 72px;
+            @media (max-width: 375px)  {
+                font-size: 12px;
+                line-height: 14px;
+            }   
+        }
+        &_price{
+            font-family: 'Roboto';
+            margin-bottom: 15px;
+            &--final{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 23px;
+                margin-bottom: 6px;
+            }
+            &--savings {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &--discount{
+                color: #3B8448;
+            }
+            &--list{
+                padding-left: 5px;
+                text-decoration: line-through;
+            }
+        }
+        
+    }
+    
+}
