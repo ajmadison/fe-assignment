@@ -1,0 +1,24 @@
+@import "../../../constants.scss";
+
+.pricing {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  font-size: 12px;
+
+  &__final {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  &__savings {
+    display: flex;
+    flex-direction: row;
+    color: $green-1;
+  }
+
+  &__list {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: $gray-1;
+  }
+}
