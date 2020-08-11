@@ -1,0 +1,12 @@
+.isQuickShip {
+  height: 16px;
+  width: 72px;
+  margin: 10px 0;
+  &__true {
+    background-image: url(../../../assets/quickship-pdp.png);
+    background-size: cover;
+  }
+  &__false {
+    background-image: none;
+  }
+}

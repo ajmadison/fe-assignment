@@ -1,0 +1,49 @@
+@import "../../constants.scss";
+
+.filter-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white-1;
+  height: 85px;
+  margin-top: 20px;
+
+  label {
+    margin-left: 25px;
+  }
+
+  select {
+    height: 50px;
+    width: 250px;
+    margin-left: 10px;
+    color: $gray-1;
+    border: 1px solid $gray-2;
+    option {
+      padding: 8px 16px;
+    }
+  }
+
+  &__left {
+    margin-left: 25px;
+  }
+
+  &__right {
+    margin-right: 25px;
+  }
+
+  &__button {
+    background-color: $white-1;
+    border: 1px solid $gray-2;
+    color: $green-1;
+    width: 155px;
+    height: 45px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Messing with the inside of a select is pretty tricky and I don't want to spend the extra time on it.
+// I could use library, but I dont want to spend the time looking for it this late in the game.

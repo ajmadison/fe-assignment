@@ -1,80 +1,42 @@
-# AJ Madison Front-end Engineer Coding Test
+# AJ Madison React Protoype
 
-Be sure to read **all** of this document carefully, and follow the guidelines within.
+This is the result of several hours of work on the code challenge provided on this repo. It's bootstrapped with `create-react-app` and leverages `typescript`. There are a few comments scattered throughout which may illuminate some of the thinking behind certain decisions which obviously I would not commit in other circumstances.
 
-## Context
+Thanks,
+Ian
 
-Use HTML, CSS, and JavaScript to implement the following mock-up.  The sort and filtering on mobile is bonus
+## Things I managed to do:
 
-> [Source Figma file](https://www.figma.com/file/864G1U99suRA6O5DHPwdqG/Coding-Test?node-id=0%3A1)
+- Accurately recreate the look and feel of the desktop experience (there was some guess work here as to szings and margins).
 
-You will need to leverage our API for 'appliance packages' to fill in the details and functionality as described below. Complete as much of this assignment as you can within a three and a half hour time period. 
-**The look and feel is more important than the functionality, so if you feel that the sorting and filtering logic will take too long, just start with static data, it doesn't have to work**
+- Implement an example of one of the three sorts suggested by the mockup (Sorting by price)
 
-Use the Figma file to see button states, colors, and responsive design.  You should be sure to complete the test to mimic the design as seen.
+- Set up and maintain a story of book of all components (mostly because I like to work this way).
 
+- Making a call to the actual API endpoint provided.
 
-## Requirements
+## Things I didn't get to:
 
-### Appliance Packages API
+- Mobile
 
-We'll email the API endpoint to you 
+- Some of the sorting
 
-### Page Structure
+- Testing 😭
 
-```
-Main
-  - Filter navigation
-    - Select Appliances ( dropdown with checkbox ) - should filter packages where the any of the items -> ~product_type equals selected category  
-      - Values: Cooktop, Dishwasher, Microwave, Range, Range Hood, Refrigerator, Wall Oven  
-    - Sort By ( dropdown ) - should contain two options , highest price and lowest price
-    - Delivery Method ( toggle ) - show filter by items where 'is_quick_ship` is true
-  - Section
-    - Appliance Package
-      - Image (final URL will be "https://assets.ajmadison.com/[image->folder]/[image->filename].jpg)
-      - Description ( [brand] [series] [description] ) (you might want to concatentate after three lines)
-      - Quick Ship ( is_quick_ship (icon in repo) )
-      - Price ( [prices->final] )
-      - List Price  ( [prices->list_price] )
-      - Discount ( [prices->list_price] - [prices->final] )
-      - View Package Button ( "https://ajmadison.com[url] )
-```
+## Available Scripts
 
-### Tech stack
+In the project directory, you can run:
 
-- JS oriented
-  - Use **React**.
-  - Feel free to use NextJS or CRA
-- Feel free to use a preprocessor like SASS/SCSS/Less but _do not_ use any CSS frameworks or libraries. Bonus points for PostCSS / CSS Modules / CSS in JS
+### `yarn start`
 
-### Bonus
+**If you haven't done so already be sure to `yarn install` before running `yarn start`** <br />
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Sort and filtering on mobile included in Figma comp.
-- Implement the Show More feature.
-- Write clear **documentation** on how the app was designed and how to run the code.
-- Provide proper unit tests.
-- Provide components in [Storybook](https://storybook.js.org) with tests.
-- Provide an online demo of the application.
-- Include subtle animations to focus attention
-- Describe optimization opportunities when you conclude
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## What We Care About
+### `yarn storybook`
 
-Look and feel + code method/style. Use any libraries that you would normally use if this were a real production App. We're interested in your code & the way you solve the problem, not how well you can use a particular library or feature. 
-
-_We're interested in your method and how you approach the problem just as much as we're interested in the end result._
-
-Here's what you should strive for:
-
-- Good use of current HTML, CSS, and JavaScript & performance best practices.
-- Extensible code.
-
-## Q&A
-
-> Where should I send back the result when I'm done?
-
-Fork this repo and send us a pull request when you think you are done. There is no deadline for this task unless otherwise noted to you directly.
-
-> What if I have a question?
-
-Just email nate@ajmadison.com
+Starts up the storybook of components that I used to create the final product. <br />
+Open [http://localhost:9009](http://localhost:9009) to view it in the browser

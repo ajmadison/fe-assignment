@@ -1,0 +1,21 @@
+@import "../../constants.scss";
+
+.package {
+  width: 300px;
+  height: 405px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
+  font-size: 14px;
+  &__image {
+    height: 200px;
+    width: 300px;
+    background-color: $white-1;
+  }
+  &__copy {
+    margin: 10px 0;
+    height: 60px;
+  }
+  &__button {
+    margin-top: 10px;
+  }
+}
