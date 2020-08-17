@@ -1,0 +1,83 @@
+@import '../../globals/globals';
+
+.filter-nav {
+  background: $light-grey;
+  border: 1px solid $filter-border;
+  padding: 20px 35px 20px 25px;
+  display: flex;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    padding: 20px 15px 10px;
+    background: none;
+    border: none;
+  }
+
+  &--open-btn {
+    width: 100%;
+    background: $light-grey;
+    border: 1px solid $filter-border;
+    text-align: center;
+    line-height: 45px;
+    color: $navy;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &--group {
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+  }
+
+  &--title {
+    font-size: 15px;
+    color: $black;
+    line-height: 18px;
+    margin-right: 10px;
+  }
+
+  &--checkbox {}
+  &--btn {
+    background: $white;
+    border: 1px solid $dark-border;
+    color: $green;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+    width: 155px;
+  }
+  &--btn-title {}
+}
+
+.dropdown {
+  position: relative;
+
+  &--select {
+    background: $white;
+    border: 1px solid $light-border;
+    font-family: $helvetica;
+    font-size: 15px;
+    line-height: 18px;
+    color: $dark-grey;
+    padding: 15px 20px 12px;
+    width: 250px;
+    appearance: none;
+  }
+  &--option {
+  }
+
+  &--arrow {
+    background: url('../../static/arrow.png') center center no-repeat;
+    height: 10px;
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+  }
+}

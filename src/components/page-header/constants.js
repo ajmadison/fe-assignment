@@ -1,0 +1,2 @@
+export const TITLE = 'Application Packages';
+export const DESC = 'Looking for a great deal on home appliances? Packages are the best bet. Most appliance packages consist of a range, refrigerator, over-the-range microwave, and dishwasher. However, some upscale brands have packages that incorporate wall ovens, cooktops, and integrated refrigerators.';

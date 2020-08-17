@@ -1,0 +1,35 @@
+@import '../../globals/globals';
+
+.page-header {
+  padding: 59px 33px 33px;
+
+  @media screen and (max-width: $mobile){
+    padding: 39px 15px 21px;
+  }
+
+  &--title {
+    color: $black;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: $mobile){
+      font-size: 25px;
+      line-height: 29px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &--desc {
+    font-size: 20px;
+    line-height: 23px;
+    max-width: 100%;
+    width: 951px;
+
+    @media screen and (max-width: $mobile){
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+}

@@ -1,0 +1,14 @@
+@import '../../globals/globals';
+
+.app-packages {
+  padding: 53px 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 53px;
+  grid-row-gap: 30px;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    padding: 32px 15px;
+  }
+}
