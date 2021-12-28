@@ -16,9 +16,9 @@ Use the Figma file to see button states, colors, and responsive design.  You sho
 
 ## Requirements
 
-### Appliance Packages API
+### Appliance Packages "API"
 
-We'll email the API endpoint to you 
+You can use db.json as the source
 
 ### Page Structure
 
