@@ -1,0 +1,122 @@
+@import './mixins.scss';
+
+.ProductCard {
+  width: 95%;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(lightgrey, 0.3);
+  animation: fadeIn 1.5s;
+  &,
+  &-savePriceWrapper,
+  &-productDetailsWrapper {
+    display: flex;
+  }
+  &-description {
+    font-size: 12px;
+    height: 3.6em;
+    overflow: hidden;
+  }
+  &-imageWrapper {
+    width: 50%;
+    border-radius: 3px 0 0 3px;
+  }
+  &-quickShipLogo {
+    width: 79px;
+    height: auto;
+  }
+  &-price {
+    font-weight: bold;
+  }
+  &-viewPackage {
+    display: none;
+  }
+  &-savePriceWrapper {
+    font-size: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &-listPrice {
+    color: #666666;
+    text-decoration: line-through;
+  }
+  &-saveAmount {
+    color: #3B8448;
+    margin: 0 8px 6px 0;
+    font-weight: bold;
+  }
+  &-productDetailsWrapper {
+    padding: 18px;
+    flex-direction: column-reverse;
+    justify-content: baseline;
+    align-self: stretch;
+    max-width: 40%;
+  }
+  &-description,
+  &-savePriceWrapper,
+  &-price,
+  &-quickShipLogo { 
+    margin-bottom: 12px;
+  }
+  &--hasAdditionalMargin {
+    margin-top: 31px;
+  }
+  &--hasFourLines {
+    height: 4.8em;
+    margin-bottom:  25px;
+  }
+  @media screen and (min-width: 500px) {
+    &-savePriceWrapper {
+      flex-direction: row;
+    }
+    &-saveAmount {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 525px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: stretch;
+    align-items: flex-end;
+    width: 46%;
+    margin-right: 4%;
+    &-productDetailsWrapper {
+      max-width: 100%;
+      padding: 0 18px 18px 18px;
+    }
+    &-viewPackage {
+      display: block;
+      width: 100%;
+      @include greyButtonWithGreenText;
+      background-color: #F5F5F5;
+    }
+    &-imageWrapper {
+      width: 100%;
+    }
+    &-productDetailsWrapper {
+      flex-direction: column;
+    }
+    &-description {
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 635px) {
+    width: 29%;
+  }
+  @media screen and (min-width: 760px) {
+    margin-right: 2%;
+    width: 31%;
+  }
+  @media screen and (min-width: 900px) {
+    width: 23%;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+} 
