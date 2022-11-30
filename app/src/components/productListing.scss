@@ -1,0 +1,11 @@
+.product-listing{
+    display: flex;
+    padding-left: 33px;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    @media (max-width: 376px)  {
+        width: 100%;
+        padding-left: 15px;
+        flex-direction: row;
+    }
+}
